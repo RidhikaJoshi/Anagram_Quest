@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: rgb(145, 199, 224);
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(145, 199, 224); */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -16,7 +19,7 @@ body {
 #container {
     width: 20em;
     height: 27em;
-    background-color: rgb(88, 211, 137);
+    background-color: rgb(211, 180, 180);
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
