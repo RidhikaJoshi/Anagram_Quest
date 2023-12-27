@@ -7,6 +7,8 @@ let refresh = document.getElementById("Refresh");
 let score = document.getElementById("score");
 let answer = document.getElementById("answer");
 let time = document.getElementById("time");
+let start = document.getElementById("Start");
+let stop = document.getElementById("Stop");
 let t = 50;
 ans = 0;
 let count = 0;
@@ -24,12 +26,13 @@ function shuffle(element) {
 let str = shuffle(words[n].word.split("")).join(" ");
 word.innerHTML = str.toUpperCase();
 hint.innerHTML = words[n].hint;
-
+let intervalId;
 function timer() {
-	setInterval(() => {
+	intervalId = setInterval(() => {
 		t--;
 		time.innerHTML = t;
 		if (t == 0) {
+			clearInterval(intervalId);
 			alert("Game Over! Your score is" + " " + ans + " out of  " + count);
 			t = 50;
 			ans = 0;
@@ -38,7 +41,23 @@ function timer() {
 		}
 	}, 1000);
 }
-timer();
+start.onclick = () => {
+	ans = 0;
+	count = 0;
+	t = 50;
+	time.innerHTML = t;
+	clearInterval(intervalId);
+	timer();
+};
+stop.onclick = () => {
+	t = 50;
+	ans = 0;
+	count = 0;
+	score.innerHTML = ans;
+	time.innerHTML = t;
+	clearInterval(intervalId);
+	alert("Game Over! Your score is" + " " + ans + " out of  " + count);
+};
 
 function random() {
 	n = Math.floor(Math.random() * words.length);
@@ -48,7 +67,9 @@ function random() {
 }
 check.onclick = () => {
 	console.log(answer.value + " " + words[n].word);
-	if (answer.value === "") {
+	if (!intervalId) {
+		alert("Please Start the Game");
+	} else if (answer.value === "") {
 		output.innerHTML = "Please enter an answer";
 		setTimeout(() => {
 			output.innerHTML = "";

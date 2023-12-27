@@ -17,8 +17,8 @@ body {
 }
 
 #container {
-    width: 20em;
-    height: 27em;
+    width: 23em;
+    height: 30em;
     background-color: rgb(211, 180, 180);
     border: 2px solid black;
     border-radius: 10px;
@@ -43,6 +43,16 @@ body {
     ;
     max-width: 100%;
     box-sizing: border-box;
+}
+.button{
+    color: white;
+    background-color: rgb(67, 121, 202);
+    border-radius: 10px;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 #answer {

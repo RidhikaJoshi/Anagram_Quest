@@ -91,4 +91,44 @@ const words = [
 		word: "library",
 		hint: "Place containing collection of books",
 	},
+	{
+		word: "ocean",
+		hint: "A large body of saltwater that covers most of the Earth's surface",
+	},
+	{
+		word: "technology",
+		hint: "The application of scientific knowledge for practical purposes",
+	},
+	{
+		word: "adventure",
+		hint: "An exciting or unusual experience",
+	},
+	{
+		word: "energy",
+		hint: "The capacity to do work or the ability to cause change",
+	},
+	{
+		word: "celebration",
+		hint: "The action of marking one's pleasure at an important event",
+	},
+	{
+		word: "chocolate",
+		hint: "A sweet food made from roasted and ground cacao seeds",
+	},
+	{
+		word: "discovery",
+		hint: "The act of finding something for the first time",
+	},
+	{
+		word: "journey",
+		hint: "An act of traveling from one place to another",
+	},
+	{
+		word: "laughter",
+		hint: "The action or sound of laughing",
+	},
+	{
+		word: "mystery",
+		hint: "Something that is difficult or impossible to understand",
+	},
 ];
