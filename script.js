@@ -10,7 +10,19 @@ let time = document.getElementById("time");
 let t = 50;
 ans = 0;
 let count = 0;
-word.innerHTML = words[n].word.toUpperCase();
+function shuffle(element) {
+	var i = element.length;
+	while (i > 0) {
+		let index = Math.floor(Math.random() * i);
+		i--;
+		let temp = element[i];
+		element[i] = element[index];
+		element[index] = temp;
+	}
+	return element;
+}
+let str = shuffle(words[n].word.split("")).join(" ");
+word.innerHTML = str.toUpperCase();
 hint.innerHTML = words[n].hint;
 
 function timer() {
@@ -27,9 +39,11 @@ function timer() {
 	}, 1000);
 }
 timer();
+
 function random() {
 	n = Math.floor(Math.random() * words.length);
-	word.innerHTML = words[n].word.toUpperCase();
+	str = shuffle(words[n].word.split("")).join(" ");
+	word.innerHTML = str.toUpperCase();
 	hint.innerHTML = words[n].hint;
 }
 check.onclick = () => {
@@ -62,6 +76,7 @@ check.onclick = () => {
 
 refresh.onclick = () => {
 	n = Math.floor(Math.random() * words.length);
-	word.innerHTML = words[n].word.toUpperCase();
+	str = shuffle(words[n].word.split("")).join(" ");
+	word.innerHTML = str.toUpperCase();
 	hint.innerHTML = words[n].hint;
 };
