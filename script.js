@@ -85,7 +85,8 @@ check.onclick = () => {
 		}, 1000);
 	} else if (answer.value.toLowerCase() === words[n].word) {
 		correctsound.play();
-		output.innerHTML = "Correct";
+		output.innerHTML =
+			"Correct! The Word is " + words[n].word.toUpperCase() + "";
 
 		setTimeout(() => {
 			answer.value = "";
@@ -97,7 +98,8 @@ check.onclick = () => {
 		random();
 	} else {
 		wrongsound.play();
-		output.innerHTML = "Incorrect";
+		output.innerHTML =
+			"Incorrect! The Correct Word is " + words[n].word.toUpperCase() + "";
 		setTimeout(() => {
 			answer.value = "";
 			output.innerHTML = "";
