@@ -131,4 +131,84 @@ const words = [
 		word: "mystery",
 		hint: "Something that is difficult or impossible to understand",
 	},
+	{
+		word: "harmony",
+		hint: "A pleasing arrangement of parts",
+	},
+	{
+		word: "balance",
+		hint: "Equality of distribution or weight",
+	},
+	{
+		word: "whisper",
+		hint: "Speaking very softly or quietly",
+	},
+	{
+		word: "puzzle",
+		hint: "A game or problem that tests one's ingenuity",
+	},
+	{
+		word: "serene",
+		hint: "Calm, peaceful, and untroubled",
+	},
+	{
+		word: "frozen",
+		hint: "Turned into ice or another solid as a result of extreme cold",
+	},
+	{
+		word: "galaxy",
+		hint: "A system of millions or billions of stars, together with gas and dust",
+	},
+	{
+		word: "vivid",
+		hint: "Producing powerful feelings or strong, clear images",
+	},
+	{
+		word: "journey",
+		hint: "An act of traveling from one place to another",
+	},
+	{
+		word: "twinkle",
+		hint: "Shine with a gleam that varies repeatedly between bright and faint",
+	},
+	{
+		word: "illusion",
+		hint: "A misleading image or idea",
+	},
+	{
+		word: "whistle",
+		hint: "A clear, high-pitched sound made by forcing breath through a small hole",
+	},
+	{
+		word: "fragrance",
+		hint: "A pleasant, sweet smell",
+	},
+	{
+		word: "splendid",
+		hint: "Magnificent; very impressive",
+	},
+	{
+		word: "golden",
+		hint: "Made of, or relating to, gold",
+	},
+	{
+		word: "silence",
+		hint: "Complete absence of sound",
+	},
+	{
+		word: "sparkle",
+		hint: "Shine brightly with flashes of light",
+	},
+	{
+		word: "magnify",
+		hint: "Make (something) appear larger than it is",
+	},
+	{
+		word: "curious",
+		hint: "Eager to know or learn something",
+	},
+	{
+		word: "delight",
+		hint: "Great pleasure or joy",
+	},
 ];
