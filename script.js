@@ -9,6 +9,10 @@ let answer = document.getElementById("answer");
 let time = document.getElementById("time");
 let start = document.getElementById("Start");
 let stop = document.getElementById("Stop");
+let correctsound = document.getElementById("correctSound");
+let wrongsound = document.getElementById("wrongSound");
+let gamestop = document.getElementById("game-stop");
+let game = document.getElementById("game-start");
 let t = 50;
 ans = 0;
 let count = 0;
@@ -42,21 +46,26 @@ function timer() {
 	}, 1000);
 }
 start.onclick = () => {
+	game.play();
 	ans = 0;
 	count = 0;
 	t = 50;
 	time.innerHTML = t;
+
 	clearInterval(intervalId);
 	timer();
 };
 stop.onclick = () => {
 	t = 50;
+	gamestop.play();
+	alert("Game Over! Your score is" + " " + ans + " out of  " + count);
 	ans = 0;
 	count = 0;
 	score.innerHTML = ans;
 	time.innerHTML = t;
 	clearInterval(intervalId);
-	alert("Game Over! Your score is" + " " + ans + " out of  " + count);
+
+	random();
 };
 
 function random() {
@@ -75,7 +84,9 @@ check.onclick = () => {
 			output.innerHTML = "";
 		}, 1000);
 	} else if (answer.value.toLowerCase() === words[n].word) {
+		correctsound.play();
 		output.innerHTML = "Correct";
+
 		setTimeout(() => {
 			answer.value = "";
 			output.innerHTML = "";
@@ -85,6 +96,7 @@ check.onclick = () => {
 		score.innerHTML = ans;
 		random();
 	} else {
+		wrongsound.play();
 		output.innerHTML = "Incorrect";
 		setTimeout(() => {
 			answer.value = "";
