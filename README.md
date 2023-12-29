@@ -4,7 +4,8 @@ Anagram Quest is a word puzzle game where players try to rearrange jumbled lette
 
 ## Demo
 
-Include a screenshot, GIF, or a link to a live demo of your game.
+![image](https://github.com/RidhikaJoshi/Anagram_Quest/assets/92508014/530cebcc-35dd-427e-8aca-8333bcb53130)
+
 
 ## Technologies Used
 - HTML
